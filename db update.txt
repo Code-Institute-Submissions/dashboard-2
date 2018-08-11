@@ -1,0 +1,12 @@
+Types of disaster
+Disaster year
+Deaths (no)
+Injured (no)
+Type of injury
+Person injured
+House they lived in
+Partner
+First name
+Second name
+Family affiliation
+Marital stat

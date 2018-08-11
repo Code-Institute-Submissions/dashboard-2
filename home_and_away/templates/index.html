@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Death & Destruction in Home and Away</title>
+  <link rel="stylesheet" href="{{ url_for ('static',
+    filename='lib/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static',
+    filename='lib/css/keen-dashboards.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Death & Destruction in Home and Away -  Hogan's Ghost, what a dangerous place to live!</a>
+
+      </div>
+    </div>
+  </div>
+  <div  id="outer" class="container-fluid">
+
+<div class="row">
+    <div class="col-md-4 center-block">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+               The dead and the injured - 1995-2018
+</div>
+            <div class="chart-stage">
+                <div id="deadinj-chart">
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-8 align-self-start">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Cause of death and injury</div>
+            <div class="chart-stage" data-position="right">
+                <div id="death-chart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="row">
+     <!-- gender -->
+          <div class="col-sm-4">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Gender
+              </div>
+              <div class="chart-stage">
+                <div id="gender-chart">
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- gender -->
+
+   <!-- storyline -->
+      <div class="col-md-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Storyline
+          </div>
+          <div class="chart-stage">
+            <div id="story-chart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- storyline -->
+
+</div>
+
+
+          <!-- first name -->
+          <div class="col-md-8">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                The dead and the injured
+              </div>
+              <div class="chart-stage">
+                <div id="fname-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- fname -->
+
+
+
+
+
+
+
+
+      <!-- year died -->
+      <div class="col-lg-12">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Year died
+          </div>
+          <div class="chart-stage">
+            <div id="year-chart"></div>
+          </div>
+        </div>
+        </div>
+
+      <!-- year died -->
+
+
+
+      <!-- family -->
+      <div class="col-md-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Family related to or affiliated with
+          </div>
+          <div class="chart-stage">
+            <div id="family-chart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- family -->
+
+
+             <!-- job -->
+      <div class="col-md-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Occupation
+          </div>
+          <div class="chart-stage">
+            <div id="job-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- job -->
+
+
+         <!-- marital stat -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Marital status
+          </div>
+          <div class="chart-stage">
+              <div id="marital-chart"></div>
+        </div>
+      </div>
+      </div>
+      <!-- maritalstat -->
+
+
+         <!-- parnter -->
+      <div class="col-md-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Partner
+          </div>
+          <div class="chart-stage">
+              <div id="partner-chart"></div>
+        </div>
+      </div>
+  </div>
+      <!-- partner -->
+
+         <!-- house -->
+      <div class="col-md-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Place of residence
+          </div>
+          <div class="chart-stage">
+              <div id="house-chart">
+        </div>
+      </div>
+</div>
+</div>
+
+
+
+  <hr>
+ <p class="small text-muted"> Data viz &#9829; from Code Institute</p>
+  <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+</body>
+</html>

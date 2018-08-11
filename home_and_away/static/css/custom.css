@@ -1,0 +1,67 @@
+body {
+    background: #000000;
+}
+
+
+.navbar-inverse {
+  background-color: #ffffff;
+  border-color: #333;
+}
+.navbar-inverse .navbar-nav > li > a,
+.navbar a.navbar-brand {
+  color: #000000;
+  font-family: "Reporter-Two", Arial, sans-serif;
+    font-size: 20px;
+}
+.chart-wrapper.chart-stage {
+    padding: 0px;
+    color: #000000;
+
+}
+
+#death-chart {
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+}
+
+
+.chart-wrapper #death-chart {
+    border-radius: 0;
+
+}
+
+.div.chart-stage.chart-wrapper {
+    background: #ffffff;
+}
+
+.div {
+    background-color: #ffffff;
+
+}
+
+
+.chart-wrapper {
+    background: #fffff;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+
+.div.chart-stage {
+    background: #ffffff;
+
+}
+.chart-stage {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: [0, 0, 0, 0];
+
+}
+

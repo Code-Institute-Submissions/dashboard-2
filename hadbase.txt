@@ -1,0 +1,609 @@
+db.haadb.insert({
+    first: 'laura',
+    last: 'bonnetti',
+    gender: 'f',
+    cause_of_death: 'hit by a train',
+    storyline: 'train dodging',
+    year_died: '1995',
+    family: 'stewart',
+    marital_stat: 'boyfriend',
+    partner: 'curtis reed',
+    job: 'student',
+    house: 'stewart'
+});
+db.haadb.insert({
+    first: 'shane',
+    last: 'parrish',
+    gender: 'm',
+    cause_of_death: 'septicemia',
+    storyline: 'motorbike accident',
+    year_died: '1996',
+    family: 'parrish',
+    marital_stat: 'married',
+    partner: 'angel parrish',
+    job: 'mechanic',
+    house: 'fishers house'
+});
+db.haadb.insert({
+    first: 'Michael Ross',
+    last: 'ross',
+    gender: 'Male',
+    cause_of_death: 'Drowned',
+    storyline: 'The big flood',
+    year_died: '1996',
+    family: 'Ross',
+    marital_stat: 'Married',
+    partner: 'Pippa Ross',
+    job: 'Business owner',
+    house: 'Summer Bay house'
+});
+db.haadb.insert({
+    first: 'Stephanie Mboto',
+    last: 'mboto',
+    gender: 'Female',
+    cause_of_death: 'Fell off a cliff',
+    year_died: '1997',
+    family: 'Nash',
+    marital_stat: 'Boyfriend',
+    partner: 'Liam Tanner',
+    job: 'Student',
+    house: 'James Street House'
+});
+db.haadb.insert({
+    first: 'saul',
+    last: 'bennett',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'saul kidnaps selina',
+    year_died: '1997',
+    family: 'bennett',
+    marital_stat: 'single',
+    partner: 'unknown',
+    job: 'cult leader',
+    house: 'the commune'
+});
+db.haadb.insert({
+    first: 'lachie',
+    last: 'fraser',
+    gender: 'm',
+    cause_of_death: 'brain aneurysm',
+    storyline: 'null',
+    year_died: '1999',
+    family: 'fraser',
+    marital_stat: 'married',
+    partner: 'chloe richards',
+    job: 'doctor',
+    house: 'james street house'
+});
+db.haadb.insert({
+    first: 'ken',
+    last: 'smith',
+    gender: 'm',
+    cause_of_death: 'crushed by a car',
+    storyline: 'null',
+    year_died: '2000',
+    family: 'smith',
+    marital_stat: 'engaged',
+    partner: 'irene roberts',
+    job: 'mechanic',
+    house: 'beach house'
+});
+db.haadb.insert({
+    first: 'ailsa',
+    last: 'stewart',
+    gender: 'f',
+    cause_of_death: 'heart attack',
+    storyline: 'null',
+    year_died: '2000',
+    family: 'stewart',
+    marital_stat: 'married',
+    partner: 'alf stewart',
+    job: 'business owner',
+    house: 'stewart'
+});
+db.haadb.insert({
+    first: 'Charlotte',
+    last: 'Adams',
+    gender: 'Female',
+    cause_of_death: 'Drowned',
+    storyline: 'None',
+    year_died: '2002',
+    family: 'Lawson',
+    marital_stat: 'Single',
+    partner: 'None',
+    job: 'Doctor',
+    house: '31 Saxon Avenue',
+    deadinj: 'Dead'
+});
+db.haadb.insert({
+    first: 'angie',
+    last: 'russell',
+    gender: 'f',
+    cause_of_death: 'murdered',
+    storyline: 'who killed angie russell',
+    year_died: '2003',
+    family: 'russell',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'principal',
+    house: 'unknown'
+});
+db.haadb.insert({
+    first: 'noah',
+    last: 'lawson',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'the stalker',
+    year_died: '2004',
+    family: 'lawson',
+    marital_stat: 'married',
+    partner: 'hayley smith',
+    job: 'counsellor',
+    house: 'the palace'
+});
+db.haadb.insert({
+    first: 'chloe',
+    last: 'richards',
+    gender: 'f',
+    cause_of_death: 'car crash',
+    storyline: 'null',
+    year_died: '2005',
+    family: 'fraser',
+    marital_stat: 'widowed',
+    partner: 'lachie fraser',
+    job: 'office worker',
+    house: 'beach house'
+});
+db.haadb.insert({
+    first: 'flynn',
+    last: 'saunders',
+    gender: 'm',
+    cause_of_death: 'cancer',
+    storyline: 'null',
+    year_died: '2006',
+    family: 'saunders',
+    marital_stat: 'married',
+    partner: 'sally fletcher',
+    job: 'doctor',
+    house: 'summer bay house'
+});
+db.haadb.insert({
+    first: 'josh',
+    last: 'west',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'who shot josh west',
+    year_died: '2006',
+    family: 'west',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'politician',
+    house: 'the palace'
+});
+db.haadb.insert({
+    first: 'beth',
+    last: 'hunter',
+    gender: 'f',
+    cause_of_death: 'car crash',
+    storyline: 'null',
+    year_died: '2007',
+    family: 'hunter',
+    marital_stat: 'partner',
+    partner: 'tony holden',
+    job: 'office worker',
+    house: '31 saxon avenue'
+});
+db.haadb.insert({
+    first: 'dan',
+    last: 'baker',
+    gender: 'f',
+    cause_of_death: 'abseiling accident',
+    storyline: 'null',
+    year_died: '2008',
+    family: 'baker',
+    marital_stat: 'married',
+    partner: 'leah patterson',
+    job: 'teacher',
+    house: 'james street house'
+});
+db.haadb.insert({
+    first: 'sam',
+    last: 'holden',
+    gender: 'f',
+    cause_of_death: 'overdose',
+    storyline: 'who killed sam',
+    year_died: '2008',
+    family: 'holden',
+    marital_stat: 'married',
+    partner: 'jack holden',
+    job: 'physiotherapist',
+    house: '33 saxon avenue'
+});
+db.haadb.insert({
+    first: 'jack',
+    last: 'holden',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'who shot jack',
+    year_died: '2008',
+    family: 'holden',
+    marital_stat: 'married',
+    partner: 'martha mckenzie',
+    job: 'police officer',
+    house: '33 saxon avenue'
+});
+db.haadb.insert({
+    first: 'lou',
+    last: 'de bono',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'people smuggling',
+    year_died: '2009',
+    family: 'de bono',
+    marital_stat: 'partner',
+    partner: 'irene roberts',
+    job: 'trawler owner',
+    house: 'beach house'
+});
+db.haadb.insert({
+    first: 'belle',
+    last: 'taylor',
+    gender: 'f',
+    cause_of_death: 'cancer',
+    storyline: 'null',
+    year_died: '2010',
+    family: 'taylor',
+    marital_stat: 'married',
+    partner: 'aden jeffries',
+    job: 'journalist',
+    house: 'beach house'
+});
+db.haadb.insert({
+    first: 'tegan',
+    last: 'callahan',
+    gender: 'f',
+    cause_of_death: 'car crash',
+    storyline: 'the big storm',
+    year_died: '2011',
+    family: 'callahan',
+    marital_stat: 'boyfriend',
+    partner: 'jake pirovic',
+    job: 'unknown',
+    house: 'unknown'
+});
+db.haadb.insert({
+    first: 'charlie',
+    last: 'buckton',
+    gender: 'f',
+    cause_of_death: 'shot',
+    storyline: 'revenge',
+    year_died: '2012',
+    family: 'buckton',
+    marital_stat: 'partner',
+    partner: 'daryl brax braxton',
+    job: 'police officer',
+    house: 'james street house'
+});
+db.haadb.insert({
+    first: 'gina',
+    last: 'palmer',
+    gender: 'f',
+    cause_of_death: 'brain aneurysm',
+    storyline: 'null',
+    year_died: '2013',
+    family: 'palmer',
+    marital_stat: 'married',
+    partner: 'john palmer',
+    job: 'principal',
+    house: '33 saxon avenue'
+});
+db.haadb.insert({
+    first: 'romeo',
+    last: 'smith',
+    gender: 'm',
+    cause_of_death: 'cancer',
+    storyline: 'null',
+    year_died: '2013',
+    family: 'smith',
+    marital_stat: 'married',
+    partner: 'indigo walker',
+    job: 'gym owner',
+    house: 'the farmhouse'
+});
+db.haadb.insert({
+    first: 'ethan',
+    last: 'mcguire',
+    gender: 'm',
+    cause_of_death: 'bomb explosion',
+    storyline: 'hospital bombing',
+    year_died: '2013',
+    family: 'mcguire',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'lawyer',
+    house: 'the cult'
+});
+db.haadb.insert({
+    first: 'casey',
+    last: 'braxton',
+    gender: 'm',
+    cause_of_death: 'shot',
+    storyline: 'saving his half brother',
+    year_died: '2014',
+    family: 'braxton',
+    marital_stat: 'girlfriend',
+    partner: 'denny miller',
+    job: 'gym instructor',
+    house: '31 saxon avenue'
+});
+db.haadb.insert({
+    first: 'denny',
+    last: 'miller',
+    gender: 'f',
+    cause_of_death: 'murdered',
+    storyline: 'who shot charlotte',
+    year_died: '2015',
+    family: 'mcguire',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'bait shop worker',
+    house: 'the farmhouse'
+});
+db.haadb.insert({
+    first: 'charlotte',
+    last: 'king',
+    gender: 'f',
+    cause_of_death: 'shot',
+    storyline: 'who shot charlotte',
+    year_died: '2015',
+    family: 'king',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'teacher',
+    house: 'unknown'
+});
+db.haadb.insert({
+    first: 'oscar',
+    last: 'mcguire',
+    gender: 'm',
+    cause_of_death: 'caravan park explosion',
+    storyline: 'caravan park gas leak',
+    year_died: '2016',
+    family: 'mcguire',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'student',
+    house: 'summer bay house'
+});
+db.haadb.insert({
+    first: 'hannah',
+    last: 'wilson',
+    gender: 'f',
+    cause_of_death: 'caravan park explosion',
+    storyline: 'caravan park gas leak',
+    year_died: '2016',
+    family: 'mcguire',
+    marital_stat: 'single',
+    partner: 'null',
+    job: 'nurse',
+    house: 'the farmhouse'
+});
+db.haadb.insert({
+    first: 'billie',
+    last: 'ashford',
+    gender: 'f',
+    cause_of_death: 'cancer',
+    storyline: 'caravan park gas leak',
+    year_died: '2017',
+    family: 'ashford',
+    marital_stat: 'married',
+    partner: 'vj patterson',
+    job: 'gym instructor',
+    house: 'summer bay house'
+});
+db.haadb.insert({
+    first: 'katerina',
+    last: 'chapman',
+    gender: 'f',
+    cause_of_death: 'car crash',
+    storyline: 'null',
+    year_died: '2017',
+    family: 'chapman',
+    marital_stat: 'partner',
+    partner: 'robbo',
+    job: 'police officer',
+    house: 'pier flat'
+});
+
+db.haadb.insert({
+    first: 'Beth',
+    last: 'Ellis',
+    gender: 'Female',
+    cause_of_death: 'Heart condition',
+    storyline: 'Unknown',
+    year_died: '2017',
+    family: 'Ellis',
+    marital_stat: 'Partner',
+    partner: 'Mason Morgan',
+    job: 'Student',
+    house: 'Unknown'
+});
+
+db.haadb.insert({
+    first: 'Boyd',
+    last: 'Easton',
+    gender: 'Male',
+    cause_of_death: 'Shot',
+    storyline: 'Who kidnapped Ava',
+    year_died: '2018',
+    family: 'Easton',
+    marital_stat: 'Single',
+    partner: 'Unknown',
+    job: 'Thug',
+    house: 'Unknown'
+});
+
+db.haadb.insert({
+    first: 'Gavin',
+    last: 'Campbell',
+    gender: 'Male',
+    cause_of_death: 'Mudslide',
+    storyline: 'Mudslide',
+    year_died: '2000',
+    family: 'Campbell',
+    marital_stat: 'Girlfriend',
+    partner: 'Shauna Bradley',
+    job: 'Journalist',
+    house: 'Unknown'
+});
+
+db.haadb.insert({
+    first: 'Alf Stewart',
+    last: 'Stewart',
+    gender: 'Male',
+    cause_of_inj: 'Heart attack',
+    type_of_inj: 'Heart attack',
+    year_died: '2016',
+    family: 'Stewart',
+    marital_stat: 'Married',
+    partner: 'Ailsa Stewart',
+    job: 'Business owner',
+    house: 'Stewart House',
+    deadinj: 'Injured'
+
+});
+
+db.haadb.insert({
+    first: 'Alf Stewart',
+    last: 'Stewart',
+    gender: 'Male',
+    cause_of_inj: 'School gas explosion',
+    type_of_inj: 'Heart attack',
+    year_died: '2018',
+    family: 'Stewart',
+    marital_stat: 'Married',
+    partner: 'Ailsa Stewart',
+    job: 'Business owner',
+    house: 'Stewart House',
+    deadinj: 'Injured'
+});
+db.haadb.insert({
+    first: 'Alf Stewart',
+    last: 'Stewart',
+    gender: 'Male',
+    cause_of_inj: 'Boat sinking',
+    type_of_inj: 'Heart attack',
+    year_died: '2002',
+    family: 'Stewart',
+    marital_stat: 'Married',
+    partner: 'Ailsa Stewart',
+    job: 'Business owner',
+    house: 'Stewart House',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'Tasha',
+    last: 'Andrews',
+    gender: 'Female',
+    cause_of_inj: 'Plane crash',
+    type_of_inj: 'Collapsed lung',
+    year_died: '2005',
+    family: 'Andrews',
+    marital_stat: 'Boyfriend',
+    partner: 'Robbie Hunter',
+    job: 'Student',
+    house: 'Beach House',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'Macca',
+    last: 'McKenzie',
+    gender: 'Male',
+    cause_of_inj: 'Barn explosion',
+    type_of_inj: 'Crushed by a beam',
+    year_died: '2006',
+    family: 'McKenzie',
+    marital_stat: 'Girlfriend',
+    partner: 'Cassie Turner',
+    job: 'Courier',
+    house: '33 Saxon Avenue',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'Peter',
+    last: 'Baker',
+    gender: 'Male',
+    cause_of_inj: 'Barn explosion',
+    type_of_inj: 'Faked own death',
+    year_died: '2006',
+    family: 'Baker',
+    marital_stat: 'Single',
+    partner: 'Unknown',
+    job: 'Courier',
+    house: 'Ebbons Hill Mansion',
+    deadinj: 'Fakes death'
+});
+
+
+db.haadb.insert({
+    first: 'Kit',
+    last: 'Hunter',
+    gender: 'Female',
+    cause_of_inj: 'Helicopter crash',
+    type_of_inj: 'Broken ankle',
+    year_died: '2006',
+    family: 'Hunter',
+    marital_stat: 'Single',
+    partner: 'Unknown',
+    job: 'Student',
+    house: '31 Saxon Avenue',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'Sally',
+    last: 'Fletcher',
+    gender: 'Female',
+    cause_of_inj: 'Stabbing',
+    type_of_inj: 'Stabbing',
+    year_died: '2006',
+    family: 'Fletcher',
+    marital_stat: 'Married',
+    partner: 'Flynn Saunders',
+    job: 'Principal',
+    house: 'Summer Bay House',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'Sally',
+    last: 'Fletcher',
+    gender: 'Female',
+    cause_of_inj: 'Stabbing',
+    type_of_inj: 'Stabbing',
+    year_died: '2008',
+    family: 'Fletcher',
+    marital_stat: 'Married',
+    partner: 'Flynn Saunders',
+    job: 'Principal',
+    house: 'Summer Bay House',
+    deadinj: 'Injured'
+});
+
+db.haadb.insert({
+    first: 'John',
+    last: 'Palmer',
+    gender: 'Male',
+    cause_of_inj: 'The great storm',
+    type_of_inj: 'Ruptured spleen',
+    year_died: '2011',
+    family: 'Palmer',
+    marital_stat: 'Married',
+    partner: 'Gina Austin',
+    job: 'Business owner',
+    house: '33 Saxon Avenue',
+    deadinj: 'Injured'
+});
