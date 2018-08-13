@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
@@ -10,7 +11,7 @@ MONGODB_PORT = 27017
 DBS_NAME = 'test'
 COLLECTION_NAME = 'haadb'
 
-@app.route("/")
+@app.route("/test/haadb")
 def index():
     """flask view to serve main dashboard"""
     return render_template("index.html")
@@ -25,9 +26,9 @@ def home_and_away():
         'family': True, 'marital_stat': True, 'partner': True, 'job': True, 'house': True, 'deadinj': True, 'cause_of_inj': True, 'type_of_inj': True
     }
 
-    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+    with MongoClient(MONGODB_URI) as conn:
         collection = conn[DBS_NAME][COLLECTION_NAME]
-        haadb = collection.find(projection=FIELDS, limit=55000)
+        haadb = collection.find(projection=FIELDS, limit=20000)
         return json.dumps(list(haadb))
 
 if __name__ == "__main__":
