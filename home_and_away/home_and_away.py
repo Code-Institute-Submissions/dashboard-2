@@ -6,12 +6,11 @@ import json
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'test'
-COLLECTION_NAME = 'haadb'
+MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
+DBS_NAME = os.getenv('MONGO_DB_NAME', 'test')
+COLLECTION_NAME = 'projects'
 
-@app.route("/test/haadb")
+@app.route("/")
 def index():
     """flask view to serve main dashboard"""
     return render_template("index.html")
@@ -26,10 +25,10 @@ def home_and_away():
         'family': True, 'marital_stat': True, 'partner': True, 'job': True, 'house': True, 'deadinj': True, 'cause_of_inj': True, 'type_of_inj': True
     }
 
-    with MongoClient(MONGODB_URI) as conn:
+    with MongoClient(MONGO_URI) as conn:
         collection = conn[DBS_NAME][COLLECTION_NAME]
-        haadb = collection.find(projection=FIELDS, limit=20000)
-        return json.dumps(list(haadb))
+        projects = collection.find(projection=FIELDS, limit=20000)
+        return json.dumps(list(projects))
 
 if __name__ == "__main__":
     app.run(debug=True)

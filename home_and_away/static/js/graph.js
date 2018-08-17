@@ -22,6 +22,12 @@ function makeGraphs(error, testhaadb) {
     var ndx = crossfilter(testhaadb);
     //Define Dimensions
 
+    var testhaadbDeaths = testhaadb;
+     testhaadbDeaths.forEach(function (d) {
+        d["year_died"] = new Date(d["year_died"], 0, 1);
+    });
+
+
     var fNameDim = ndx.dimension(function (d) {
         return d["first"];
     });
@@ -43,8 +49,11 @@ function makeGraphs(error, testhaadb) {
         return d["storyline"];
     });
 
+    // var yearDim = ndx.dimension(function (d) {
+    //     return d["year_died"];
+    // });
     var yearDim = ndx.dimension(function (d) {
-        return d["year_died"];
+        return d["year_died"] ? d["year_died"] : 0;
     });
 
     var familyDim = ndx.dimension(function (d) {
@@ -74,6 +83,8 @@ function makeGraphs(error, testhaadb) {
     var deadinjDim = ndx.dimension(function (d) {
         return d["deadinj"];
     });
+
+
 
     var dateFormat = d3.time.format("%Y-%m-%d %H:%M:%S");
 
@@ -122,7 +133,7 @@ function makeGraphs(error, testhaadb) {
     var familyChart = dc.rowChart("#family-chart");
     var deathChart = dc.pieChart("#death-chart");
     var houseChart = dc.pieChart("#house-chart");
-    var yearChart = dc.lineChart("#year-chart")
+    var yearChart = dc.barChart("#year-chart")
     //var yearChart = dc.pieChart("#year-chart");
     var maritalChart = dc.pieChart("#marital-chart");
     var minDate = yearDim.bottom(1)[0]["year_died"];
@@ -208,7 +219,7 @@ function makeGraphs(error, testhaadb) {
         .group(numDeadorInj);
 
     deathChart
-        .ordinalColors(["#0060ca", "#fcdc74", "#91ceff", "#ff4d4d", "#74dbef"])
+        .ordinalColors(["#0060ca", "#fcdc74", "#91ceff", "#ff4d4d", "#74dbef", "#777"])
         .height(800)
         .width(800)
         .radius(250)
@@ -230,9 +241,10 @@ function makeGraphs(error, testhaadb) {
 
     storyChart
         .ordinalColors(["#0060ca", "#fcdc74", "#91ceff", "#ff4d4d", "#74dbef"])
-        .height(440)
-        .radius(100)
-        .innerRadius(40)
+        .height(600)
+        .width(600)
+        .radius(200)
+        // .innerRadius(60)
         .transitionDuration(1500)
         .dimension(storyDim)
         .group(numDeathsBySline);
@@ -294,12 +306,27 @@ function makeGraphs(error, testhaadb) {
         .margins({top: 30, right: 50, bottom: 50, left: 50})
         .dimension(yearDim)
         .group(numDeathsByYear)
-        .renderArea(true)
-        .transitionDuration(500)
+        // .renderArea(true)
         .x(d3.time.scale().domain([minDate, maxDate]))
+        // makes bars thicker, solution found on StackOverflow mentioned in README
+        .xUnits(function () {
+            return 30;
+        })
+        // .transitionDuration(500)
+        // makes the bar chart clickable, solution found on StackOverflow and mentioned in README
+        .on("renderlet", function (yearChart) {
+        yearChart.selectAll("rect.bar").on("click", yearChart.onClick);
+        })
+        .centerBar(true)
         .elasticY(true)
+        .renderHorizontalGridLines(true)
         .xAxisLabel("Year")
-        .yAxis().ticks(6);
+        .yAxis()
+        .ticks(8);
+        // .x(d3.time.scale().domain([minDate, maxDate]))
+        // .elasticY(true)
+        // .xAxisLabel("Year")
+        // .yAxis().ticks(6);
 
 
 
