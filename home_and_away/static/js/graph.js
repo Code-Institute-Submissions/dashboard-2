@@ -306,6 +306,7 @@ function makeGraphs(error, testhaadb) {
         .margins({top: 30, right: 50, bottom: 50, left: 50})
         .dimension(yearDim)
         .group(numDeathsByYear)
+        .brushOn(false)
         // .renderArea(true)
         .x(d3.time.scale().domain([minDate, maxDate]))
         // makes bars thicker, solution found on StackOverflow mentioned in README
