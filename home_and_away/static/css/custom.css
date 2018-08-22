@@ -65,3 +65,6 @@ body {
 
 }
 
+.pie-slice title {
+    display: hidden;
+}
