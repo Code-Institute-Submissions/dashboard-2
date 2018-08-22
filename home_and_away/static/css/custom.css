@@ -2,6 +2,16 @@ body {
     background: #000000;
 }
 
+@font-face {
+    font-family: 'Reporter';
+    src: url('static/fonts/reporter_regular-webfont.woff2') format('woff2'),
+         url('static/fonts/reporter_regular-webfont.woff') format('woff')
+         url('static/fonts/report_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 .navbar-inverse {
   background-color: #ffffff;
@@ -10,7 +20,7 @@ body {
 .navbar-inverse .navbar-nav > li > a,
 .navbar a.navbar-brand {
   color: #000000;
-  font-family: "Reporter-Two", Arial, sans-serif;
+  font-family: "Reporter", Arial, sans-serif;
     font-size: 20px;
 }
 .chart-wrapper.chart-stage {
@@ -65,6 +75,12 @@ body {
 
 }
 
-.pie-slice title {
+.dc-chart .pie-slice {
+    fill: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.test-anchor {
     display: hidden;
 }
