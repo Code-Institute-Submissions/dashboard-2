@@ -1,5 +1,5 @@
 body {
-    background: #000000;
+    background-color: #000000;
 }
 
 @font-face {
@@ -12,6 +12,9 @@ body {
 
 }
 
+svg {
+    color: black;
+}
 
 .navbar-inverse {
   background-color: #ffffff;
@@ -19,14 +22,26 @@ body {
 }
 .navbar-inverse .navbar-nav > li > a,
 .navbar a.navbar-brand {
-  color: #000000;
+  color: black;
   font-family: "Reporter", Arial, sans-serif;
     font-size: 20px;
 }
 .chart-wrapper.chart-stage {
     padding: 0px;
-    color: #000000;
+    color: black;
 
+}
+
+.dc-chart g.row text {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    fill: white;
+    text-shadow: 1px 1px #000000;
+}
+
+.pie-slice title {
+    color: black;
 }
 
 #death-chart {
@@ -39,6 +54,10 @@ body {
 
     border: none;
     border-radius: 0;
+}
+
+.chart-wrapper .chart-title {
+    color: black;
 }
 
 
@@ -77,10 +96,8 @@ body {
 
 .dc-chart .pie-slice {
     fill: white;
-    font-size: 50px;
+    font-size: 15px;
+    color: black;
     cursor: pointer;
 }
 
-.test-anchor {
-    display: hidden;
-}
