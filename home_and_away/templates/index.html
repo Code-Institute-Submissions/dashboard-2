@@ -2,11 +2,10 @@
 <html>
 <head>
   <title>Death & Destruction in Home and Away</title>
-  <link rel="stylesheet" href="{{ url_for ('static',
-    filename='lib/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{ url_for ('static',
-    filename='lib/css/keen-dashboards.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+  <link rel="stylesheet" href="{{url_for ('static', filename='lib/css/introjs.css')}}" />
   <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
 
 
@@ -17,6 +16,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="./">Death & Destruction in Home and Away -  Hogan's Ghost, what a dangerous place to live!</a>
+        <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
 
       </div>
     </div>
@@ -32,7 +32,7 @@
             <div class="chart-title">
                The dead and the injured - 1995-2018
             </div>
-            <div class="chart-stage">
+            <div class="chart-stage" data-step="1" data-intro="Crikey, Summer Bay is a dangerous place to live. Here's a look at some of the many people who've died or been injured over the years" style="font-weight: normal" data-position="right">
                 <div id="deadinj-chart">
             </div>
             </div>
@@ -44,7 +44,7 @@
         <div class="chart-wrapper">
             <div class="chart-title">
                 Cause of death and injury</div>
-            <div class="chart-stage" data-position="right">
+            <div class="chart-stage" data-step="2" data-intro="These flamin galahs die in the most ridiculous ways. There sure are a lot of guns in Summer Bay!" style="font-weight: normal" data-position="right">
                 <div id="death-chart">
                 </div>
             </div>
@@ -63,7 +63,7 @@
               <div class="chart-title">
                 Gender
               </div>
-              <div class="chart-stage">
+              <div class="chart-stage" data-step="3" data-intro="Wouldn't want to be a man in Summer Bay, they have way worse luck than the Sheilas!" style="font-weight: normal" data-position="right">
                 <div id="gender-chart">
               </div>
               </div>
@@ -77,7 +77,7 @@
           <div class="chart-title">
             Storyline
           </div>
-          <div class="chart-stage">
+          <div class="chart-stage" data-step="4" data-intro="Gas explosion! Barn explosion! It's all go in Summer Bay!" style="font-weight: normal" data-position="right">
             <div id="story-chart"></div>
           </div>
         </div>
@@ -88,17 +88,31 @@
 
 
           <!-- first name -->
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="chart-wrapper">
               <div class="chart-title">
                 The dead and the injured
               </div>
-              <div class="chart-stage">
+              <div class="chart-stage" data-step="5" data-intro="Some people are more clumsy than others *cough* Alf Stewart" style="font-weight: normal" data-position="right">
                 <div id="fname-chart"></div>
               </div>
             </div>
           </div>
           <!-- fname -->
+          
+                     <!-- job -->
+      <div class="col-md-6">
+        <div class="chart-wrapper align-center-block">
+          <div class="chart-title">
+         Occupation
+          </div>
+          <div class="chart-stage" data-step="6" data-intro="Police clearly aren't safe in Summer Bay!" style="font-weight: normal" data-position="right">
+            <div id="job-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- job -->
+      
 
 
 
@@ -113,7 +127,7 @@
           <div class="chart-title">
          Year died
           </div>
-          <div class="chart-stage">
+          <div class="chart-stage" data-step="7" data-intro="Doesn't matter your age, the grim reaper will find you in Summer Bay" style="font-weight: normal" data-position="right">
             <div id="year-chart"></div>
           </div>
         </div>
@@ -124,12 +138,12 @@
 
 
       <!-- family -->
-      <div class="col-md-12">
+      <div class="col-md-8">
         <div class="chart-wrapper">
           <div class="chart-title">
             Family related to or affiliated with
           </div>
-          <div class="chart-stage">
+          <div class="chart-stage" data-step="8" data-intro="The people left behind never forget you, until they remarry, a la Leah 'Black Widow' Patterson" style="font-weight: normal" data-position="right">
             <div id="family-chart"></div>
           </div>
         </div>
@@ -138,27 +152,13 @@
       <!-- family -->
 
 
-             <!-- job -->
-      <div class="col-md-6">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Occupation
-          </div>
-          <div class="chart-stage">
-            <div id="job-chart"></div>
-          </div>
-        </div>
-      </div>
-      <!-- job -->
-
-
          <!-- marital stat -->
       <div class="col-md-4">
         <div class="chart-wrapper">
           <div class="chart-title">
          Marital status
           </div>
-          <div class="chart-stage">
+          <div class="chart-stage" data-step="9" data-intro="Single or married, death won't spare you" style="font-weight: normal" data-position="right">
               <div id="marital-chart"></div>
         </div>
       </div>
@@ -166,32 +166,37 @@
       </div>
       <!-- maritalstat -->
 
+  
+             <!-- house -->
+      <div class="col-md-6 align-center-block">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+         Place of residence
+          </div>
+          <div class="chart-stage" data-step="10" data-intro="Don't move to Saxon Street you galahs!" style="font-weight: normal" data-position="right">
+              <div id="house-chart">
+        </div>
+      </div>
+</div>
+</div>
+
+
+
 
          <!-- parnter -->
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="chart-wrapper">
           <div class="chart-title">
          Partner
           </div>
-          <div class="chart-stage">
+          <div class="chart-stage" data-step="11" data-intro="Poor black widow Leah" style="font-weight: normal" data-position="right">
               <div id="partner-chart"></div>
         </div>
       </div>
   </div>
       <!-- partner -->
 
-         <!-- house -->
-      <div class="col-md-6">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Place of residence
-          </div>
-          <div class="chart-stage">
-              <div id="house-chart">
-        </div>
-      </div>
-</div>
-</div>
+  
 
 </div>
 
@@ -205,5 +210,6 @@
   <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
   <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
   <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+  <script src="{{url_for ('static', filename='lib/js/intro.js')}}" type="text/javascript"></script>
 </body>
 </html>

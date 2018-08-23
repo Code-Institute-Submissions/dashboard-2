@@ -2,6 +2,7 @@ body {
     background-color: #000000;
 }
 
+
 @font-face {
     font-family: 'reporter-tworegular';
     src: url('fonts/reportr-webfont.eot');
@@ -15,9 +16,15 @@ body {
 
 }
 
+.chart-wrapper .chart-stage {
+    color: black;
+
+}
+
 svg {
     color: black;
-    padding: 0 0 0;
+
+    
 }
 
 .navbar-header {
@@ -33,11 +40,7 @@ svg {
   font-family: 'reporter-tworegular', Arial, sans-serif;
     font-size: 20px;
 }
-.chart-wrapper.chart-stage {
-    padding: 0px;
-    color: black;
 
-}
 
 .dc-chart g.row text {
     color: white;

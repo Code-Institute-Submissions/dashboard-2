@@ -133,16 +133,40 @@ function makeGraphs(error, testhaadb) {
         .legend(dc.legend());
     
     
-    jobChart
+    genderChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(400)
-        .width(400)
-        .radius(150)
+        .height(220)
+        .radius(90)
+        .innerRadius(10)
         .transitionDuration(1500)
-        .dimension(jobDim)
-        .group(numDeathsByJob)
+        .dimension(genderDim)
+        .group(numDeathsByGender)
         .legend(dc.legend());
+        
+        
+    storyChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
 
+        .height(700)
+        .width(700)
+        .radius(250)
+        // .innerRadius(60)
+        .transitionDuration(1500)
+        .dimension(storyDim)
+        .group(numDeathsBySline)
+        .legend(dc.legend());
+    
+    
+    fnameChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .height(800)
+        .width(600)
+        .transitionDuration(1500)
+        .dimension(fNameDim)
+        .group(numDeathsByFname)
+        .xAxis().ticks(3);
+        
+    
     maritalChart
         .ordinalColors(["#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(300)
@@ -153,6 +177,20 @@ function makeGraphs(error, testhaadb) {
         .dimension(maritalDim)
         .group(numDeathsByStat)
         .legend(dc.legend());
+    
+    
+    
+    jobChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .height(400)
+        .width(400)
+        .radius(150)
+        .transitionDuration(1500)
+        .dimension(jobDim)
+        .group(numDeathsByJob)
+        .legend(dc.legend());
+
+
 
     houseChart
         .ordinalColors(["#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
@@ -164,15 +202,7 @@ function makeGraphs(error, testhaadb) {
         .group(numDeathsByHouse)
         .legend(dc.legend());
 
-    genderChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(220)
-        .radius(90)
-        .innerRadius(10)
-        .transitionDuration(1500)
-        .dimension(genderDim)
-        .group(numDeathsByGender)
-        .legend(dc.legend());
+
 
    
 
@@ -190,24 +220,14 @@ function makeGraphs(error, testhaadb) {
 
 
 
-    storyChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
 
-        .height(700)
-        .width(700)
-        .radius(250)
-        // .innerRadius(60)
-        .transitionDuration(1500)
-        .dimension(storyDim)
-        .group(numDeathsBySline)
-        .legend(dc.legend());
 
 
     partnerChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(440)
-        .width(400)
-        .radius(100)
+        .height(700)
+        .width(700)
+        .radius(200)
         .innerRadius(10)
         .transitionDuration(1500)
         .dimension(partnerDim)
@@ -215,14 +235,6 @@ function makeGraphs(error, testhaadb) {
         .legend(dc.legend());
 
 
-    fnameChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(800)
-        .width(800)
-        .transitionDuration(1500)
-        .dimension(fNameDim)
-        .group(numDeathsByFname)
-        .xAxis().ticks(3);
 
     yearChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
