@@ -3,10 +3,13 @@ body {
 }
 
 @font-face {
-    font-family: 'Reporter';
-    src: url('static/fonts/reporter_regular-webfont.woff2') format('woff2'),
-         url('static/fonts/reporter_regular-webfont.woff') format('woff')
-         url('static/fonts/report_regular.ttf') format('truetype');
+    font-family: 'reporter-tworegular';
+    src: url('fonts/reportr-webfont.eot');
+    src: url('fonts/reportr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/reportr-webfont.ttf')  format('truetype'),
+         url('fonts/reportr-webfont.woff2') format('woff2'),
+         url('fonts/reportr-webfont.woff') format('woff'),
+         url('fonts/reportr-webfont.svg#reporter-tworegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -14,8 +17,12 @@ body {
 
 svg {
     color: black;
+    padding: 0 0 0;
 }
 
+.navbar-header {
+    font-family: "Reporter-Two", Arial, sans-serif;
+}
 .navbar-inverse {
   background-color: #ffffff;
   border-color: #333;
@@ -23,7 +30,7 @@ svg {
 .navbar-inverse .navbar-nav > li > a,
 .navbar a.navbar-brand {
   color: black;
-  font-family: "Reporter", Arial, sans-serif;
+  font-family: 'reporter-tworegular', Arial, sans-serif;
     font-size: 20px;
 }
 .chart-wrapper.chart-stage {
@@ -34,7 +41,7 @@ svg {
 
 .dc-chart g.row text {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     fill: white;
     text-shadow: 1px 1px #000000;
@@ -80,7 +87,8 @@ svg {
     background: #fffff;
     font-size: 16px;
     color: #000000;
-    font-family: Reporter;
+    font-family: 'reporter-tworegular', Arial, sans-serif;
+    
 
 }
 
