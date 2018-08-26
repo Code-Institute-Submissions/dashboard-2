@@ -83,6 +83,7 @@ svg {
 .div {
     background-color: #ffffff;
 
+
 }
 
 
@@ -101,7 +102,7 @@ svg {
 
 }
 .chart-stage {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Questrial', sans-serif;
     margin: [0, 0, 0, 0];
 
 }
@@ -109,7 +110,11 @@ svg {
 .dc-chart .pie-slice {
     fill: white;
     font-size: 15px;
-    color: black;
+    text-shadow: 2px 2px 2px black;
     cursor: pointer;
+}
+
+.dc-legend {
+    font-size: 15px;
 }
 
