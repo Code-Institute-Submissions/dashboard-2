@@ -123,9 +123,9 @@ function makeGraphs(error, testhaadb) {
 
     deathChart
         .ordinalColors(["#ff5349", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(700)
-        .width(700)
-        .radius(250)
+        .height(650)
+        .width(650)
+        .radius(200)
         .innerRadius(0)
         .transitionDuration(1500)
         .dimension(causeOfDeathDim)
