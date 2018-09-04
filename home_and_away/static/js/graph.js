@@ -126,7 +126,7 @@ function makeGraphs(error, testhaadb) {
         .height(650)
         .width(650)
         .radius(200)
-        .innerRadius(0)
+        .innerRadius(10)
         .transitionDuration(1500)
         .dimension(causeOfDeathDim)
         .group(numDeathsByCause)
