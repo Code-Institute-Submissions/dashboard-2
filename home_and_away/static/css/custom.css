@@ -16,6 +16,11 @@ body {
 
 }
 
+div .dc-chart {
+    margin: auto;
+    float: none;
+}
+
 .chart-wrapper .chart-stage {
     color: black;
     padding: 5px 5px;

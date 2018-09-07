@@ -101,7 +101,7 @@ function makeGraphs(error, testhaadb) {
     var maritalChart = dc.pieChart("#marital-chart");
     var minDate = yearDim.bottom(1)[0]["year_died"];
     var maxDate = yearDim.top(1)[0]["year_died"];
-    var fnameChart = dc.rowChart("#fname-chart");
+    var fnameChart = dc.pieChart("#fname-chart");
     var storyChart = dc.pieChart("#story-chart");
     var partnerChart = dc.pieChart("#partner-chart");
     var deadorinjChart = dc.pieChart("#deadinj-chart");
@@ -125,8 +125,8 @@ function makeGraphs(error, testhaadb) {
         .ordinalColors(["#ff5349", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(650)
         .width(650)
-        .radius(200)
-        .innerRadius(10)
+        .radius(300)
+        // .innerRadius(10)
         .transitionDuration(1500)
         .dimension(causeOfDeathDim)
         .group(numDeathsByCause)
@@ -146,7 +146,6 @@ function makeGraphs(error, testhaadb) {
         
     storyChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-
         .height(700)
         .width(700)
         .radius(250)
@@ -158,13 +157,14 @@ function makeGraphs(error, testhaadb) {
     
     
     fnameChart
-        .ordinalColors(["#e3256b"])
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(800)
-        .width(600)
+        .width(800)
+        .radius(400)
         .transitionDuration(1500)
         .dimension(fNameDim)
         .group(numDeathsByFname)
-        .xAxis().ticks(3);
+        // .legend(dc.legend());
         
     
     maritalChart
