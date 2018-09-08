@@ -107,12 +107,11 @@ function makeGraphs(error, testhaadb) {
     var deadorinjChart = dc.pieChart("#deadinj-chart");
    
 
-    
+    //The Dead & the Injured//
     deadorinjChart
         .ordinalColors(["#ff5359", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(350)
-        .width(350)
-        .radius(120)
+        .radius(150)
         .innerRadius(10)
         .transitionDuration(1500)
         .dimension(deadinjDim)
@@ -120,34 +119,32 @@ function makeGraphs(error, testhaadb) {
         .legend(dc.legend());
 
 
-
+    //Cause of death chart//
     deathChart
         .ordinalColors(["#ff5349", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(650)
-        .width(650)
-        .radius(300)
+        .radius(280)
         // .innerRadius(10)
         .transitionDuration(1500)
         .dimension(causeOfDeathDim)
         .group(numDeathsByCause)
         .legend(dc.legend());
     
-    
+    //Gender Chart//
     genderChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(220)
-        .radius(90)
+        .height(235)
+        .radius(100)
         .innerRadius(10)
         .transitionDuration(1500)
         .dimension(genderDim)
         .group(numDeathsByGender)
         .legend(dc.legend());
         
-        
+    //Storyline chart//    
     storyChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(700)
-        .width(700)
+        .height(640)
         .radius(250)
         // .innerRadius(60)
         .transitionDuration(1500)
@@ -156,86 +153,45 @@ function makeGraphs(error, testhaadb) {
         .legend(dc.legend());
     
     
-    fnameChart
+    //Job chart//
+    jobChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(800)
-        .width(800)
-        .radius(400)
+        .height(380)
+        .radius(110)
+        .innerRadius(10)
         .transitionDuration(1500)
-        .dimension(fNameDim)
-        .group(numDeathsByFname)
-        // .legend(dc.legend());
-        
+        .dimension(jobDim)
+        .renderLabel(false)
+        .group(numDeathsByJob)
+        .legend(dc.legend());
     
+    
+    
+    //Marital status chart//
     maritalChart
         .ordinalColors(["#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(300)
-        .width(300)
+        .height(200)
         .radius(90)
         .innerRadius(10)
         .transitionDuration(1500)
         .dimension(maritalDim)
         .group(numDeathsByStat)
+        .renderLabel(false)
         .legend(dc.legend());
+        
     
-    
-    
-    jobChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(400)
-        .width(400)
-        .radius(150)
-        .transitionDuration(1500)
-        .dimension(jobDim)
-        .group(numDeathsByJob)
-        .legend(dc.legend());
-
-
-
+    //House chart//
     houseChart
         .ordinalColors(["#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(400)
-        .width(400)
-        .radius(150)
+        .height(300)
+        .radius(100)
         .transitionDuration(1500)
         .dimension(houseDim)
         .group(numDeathsByHouse)
+        .renderLabel(false)
         .legend(dc.legend());
-
-
-
-   
-
-
-
-
-    familyChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(500)
-        .width(800)
-        .transitionDuration(1500)
-        .dimension(familyDim)
-        .group(numDeathsByFamily)
-        .xAxis().ticks(6);
-
-
-
-
-
-
-    partnerChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(700)
-        .width(700)
-        .radius(200)
-        .innerRadius(10)
-        .transitionDuration(1500)
-        .dimension(partnerDim)
-        .group(numDeathsByPartner)
-        .legend(dc.legend());
-
-
-
+    
+    //Year of death chart//
     yearChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .width(800)
@@ -266,6 +222,74 @@ function makeGraphs(error, testhaadb) {
         // .elasticY(true)
         // .xAxisLabel("Year")
         // .yAxis().ticks(6);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    fnameChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .height(800)
+        .radius(300)
+        .transitionDuration(1500)
+        .dimension(fNameDim)
+        .group(numDeathsByFname)
+        // .legend(dc.legend());
+        
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+   
+
+
+
+
+    familyChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .height(500)
+        .width(800)
+        .transitionDuration(1500)
+        .dimension(familyDim)
+        .group(numDeathsByFamily)
+        .xAxis().ticks(6);
+
+
+
+
+
+
+    partnerChart
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .height(700)
+        .width(700)
+        .radius(200)
+        .innerRadius(10)
+        .transitionDuration(1500)
+        //solution found online at dc-js.github.io//
+        .renderLabel(false)
+        .dimension(partnerDim)
+        .group(numDeathsByPartner)
+        .legend(dc.legend());
+
+
+
+    
 
 
 
