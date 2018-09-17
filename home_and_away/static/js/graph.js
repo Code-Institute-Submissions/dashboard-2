@@ -103,7 +103,7 @@ function makeGraphs(error, testhaadb) {
     var maxDate = yearDim.top(1)[0]["year_died"];
     var fnameChart = dc.pieChart("#fname-chart");
     var storyChart = dc.pieChart("#story-chart");
-    var partnerChart = dc.pieChart("#partner-chart");
+    // var partnerChart = dc.rowChart("#partner-chart");
     var deadorinjChart = dc.pieChart("#deadinj-chart");
    
 
@@ -182,9 +182,9 @@ function makeGraphs(error, testhaadb) {
     
     //House chart//
     houseChart
-        .ordinalColors(["#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(300)
-        .radius(100)
+        .radius(90)
         .transitionDuration(1500)
         .dimension(houseDim)
         .group(numDeathsByHouse)
@@ -204,7 +204,7 @@ function makeGraphs(error, testhaadb) {
         .x(d3.time.scale().domain([minDate, maxDate]))
         // makes bars thicker, solution found on StackOverflow mentioned in README
         .xUnits(function () {
-            return 30;
+            return 25;
         })
         .transitionDuration(500)
         //makes the bar chart clickable, solution found on StackOverflow and mentioned in README
@@ -218,12 +218,9 @@ function makeGraphs(error, testhaadb) {
         .yAxisLabel("Strewth, deaths or injurys per year")
         .yAxis()
         .ticks(8);
-        // .x(d3.time.scale().domain([minDate, maxDate]))
-        // .elasticY(true)
-        // .xAxisLabel("Year")
-        // .yAxis().ticks(6);
     
     
+   
     
     
     
@@ -241,7 +238,7 @@ function makeGraphs(error, testhaadb) {
         .transitionDuration(1500)
         .dimension(fNameDim)
         .group(numDeathsByFname)
-        // .legend(dc.legend());
+        .legend(dc.legend());
         
     
     
@@ -263,29 +260,29 @@ function makeGraphs(error, testhaadb) {
     familyChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
         .height(500)
-        .width(800)
+        .width(420)
         .transitionDuration(1500)
         .dimension(familyDim)
         .group(numDeathsByFamily)
-        .xAxis().ticks(6);
+        .elasticX(true)
+        .gap(3)
+        .xAxis().ticks(3);
 
 
 
 
 
 
-    partnerChart
-        .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-        .height(700)
-        .width(700)
-        .radius(200)
-        .innerRadius(10)
-        .transitionDuration(1500)
-        //solution found online at dc-js.github.io//
-        .renderLabel(false)
-        .dimension(partnerDim)
-        .group(numDeathsByPartner)
-        .legend(dc.legend());
+
+    // partnerChart
+    //     .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
+    //     .height(700)
+    //     .width(400)
+    //     .transitionDuration(1500)
+    //     //solution found online at dc-js.github.io//
+    //     .dimension(partnerDim)
+    //     .group(numDeathsByPartner)
+    //     .legend(dc.legend());
 
 
 

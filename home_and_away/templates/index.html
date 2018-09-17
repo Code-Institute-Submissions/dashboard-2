@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Death & Destruction in Home and Away</title>
-  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
-  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
-  <link rel="stylesheet" href="{{url_for ('static', filename='lib/css/introjs.css')}}" />
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Death & Destruction in Home and Away</title>
+<link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+<link rel="stylesheet" href="{{url_for ('static', filename='lib/css/introjs.css')}}" />
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
 
 
 </head>
 <body class="application">
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="./">Death & Destruction in Home and Away -  Hogan's ghost, what a dangerous place to live!</a>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./">Death & Destruction in Home and Away -  Hogan's ghost, what a dangerous place to live!</a>
         <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
-
-      </div>
     </div>
   </div>
+</div>
   
   
 <div id="outer" class="container-fluid">
   
-  <!--Dead or injured chart-->
+<!--Dead or injured chart-->
 <div class="row">
 	<div class="col-md-4">						
 		<div class="row">
@@ -40,10 +42,10 @@
         </div>
 			</div>
 		</div>
-				<!--Dead or injured chart-->
+<!--Dead or injured chart-->
 				
 				
-				<!--Gender chart-->
+<!--Gender chart-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="chart-wrapper">
@@ -57,9 +59,9 @@
 		</div>
 	</div>
 </div>	
-				<!--Gender chart-->
+<!--Gender chart-->
 				
-				<!--Cause of death chart-->
+<!--Cause of death chart-->
   <div class="col-md-8">
 		<div class="chart-wrapper">
       <div class="chart-title">Cause of death and injury</div>
@@ -69,19 +71,16 @@
       </div>
 	 </div>
 	</div>
-			<!--cause of death chart-->
+<!--cause of death chart-->
+			
+<!--second section-->
+		
 			
 			
 
-			
-		
-		<!--second section-->
-		
-			
-			
-				<!--storyline-->
 <div class="row">
   
+<!--storyline-->
   <div class="col-md-8">
 		<div class="chart-wrapper">
       <div class="chart-title">Storyline</div>
@@ -90,7 +89,7 @@
         </div>
     </div>
 	</div>
-				<!--storyline-->
+<!--storyline-->
 			
 	<div class="col-md-4">
 	  
@@ -124,9 +123,11 @@
 	</div>
 </div>	
 
+<!--Third row-->
 
-<!-- house chart -->
+
 <div class="row">
+<!-- house chart -->
   <div class="col-md-4">
     <div class="chart-wrapper">
       <div class="chart-title">Place of residence</div>
@@ -150,146 +151,62 @@
 </div>			
 
 
-
-
-          <!-- first name -->
-          <!--<div class="col-md-6">-->
-          <!--  <div class="chart-wrapper">-->
-          <!--    <div class="chart-title">-->
-          <!--      The dead and the injured-->
-          <!--    </div>-->
-          <!--    <div class="chart-stage" data-step="5" data-intro="Some people are more accident prone than others. Alf has a heart attack every few years! Strewth!" style="font-weight: normal" data-position="right">-->
-          <!--      <div id="fname-chart"></div>-->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!--</div>-->
-          <!-- fname -->
-          
-                     <!-- job -->
-      <!--<div class="col-md-6">-->
-      <!--  <div class="chart-wrapper align-center-block">-->
-      <!--    <div class="chart-title">-->
-      <!--   Occupation-->
-      <!--    </div>-->
-      <!--    <div class="chart-stage" data-step="6" data-intro="Summer Bay is a dodgy place to work, no matter what you do!" style="font-weight: normal" data-position="left">-->
-      <!--      <div id="job-chart"></div>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</div>-->
-      <!-- job -->
-      
-
-
-
-
-
-
-
-
-      <!-- year died -->
-      <div class="col-lg-8 col-lg-offset-2">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Year died
-          </div>
-          <div class="chart-stage" data-step="7" data-intro="The deaths have really ramped up since the 90's, Summer Bay is even more dangerous these days!" style="font-weight: normal" data-position="right">
-            <div id="year-chart"></div>
-          </div>
+<!--first name chart-->
+<div class="row">
+  <div class="col-md-8">
+    <div class="chart-wrapper">
+      <div class="chart-title">The dead and the injured</div>
+        <div class="chart-stage" data-step="5" data-intro="Some people are more accident prone than others. Alf has a heart attack every few years! Strewth!" style="font-weight: normal" data-position="right">
+          <div id="fname-chart"></div>
         </div>
-        </div>
-
-      <!-- year died -->
-
-
-
-      <!-- family -->
-      <!--<div class="col-md-8">-->
-      <!--  <div class="chart-wrapper">-->
-      <!--    <div class="chart-title">-->
-      <!--      Family related to or affiliated with-->
-      <!--    </div>-->
-      <!--    <div class="chart-stage" data-step="8" data-intro="The Stewarts have really suffered over the years, cwith deaths and heart attacks always looming over them" style="font-weight: normal" data-position="right">-->
-      <!--      <div id="family-chart"></div>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</div>-->
-
-      <!-- family -->
-
-
-         <!-- marital stat -->
-      <div class="col-md-4">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Marital status
-          </div>
-          <div class="chart-stage" data-step="9" data-intro="Single or married, death won't spare you in the Bay" style="font-weight: normal" data-position="left">
-              <div id="marital-chart"></div>
-        </div>
-      </div>
-      </div>
-      </div>
-      <!-- maritalstat -->
-
-  
-             <!-- house -->
-      <div class="col-md-6">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Place of residence
-          </div>
-          <div class="chart-stage" data-step="10" data-intro="Don't move to Saxon Avenue you galahs, it's Summer Bays most dangerous street!" style="font-weight: normal" data-position="right">
-              <div id="house-chart">
-        </div>
-      </div>
-</div>
-</div>
-
-
-
-
-         <!-- parnter -->
-      <div class="col-md-8">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-         Partner
-          </div>
-          <div class="chart-stage" data-step="11" data-intro="It seems like you're more likely to die if you're single in Summer Bay! Couple up quickly!" style="font-weight: normal" data-position="right">
-              <div id="partner-chart"></div>
-        </div>
-      </div>
+    </div>
   </div>
-      <!-- partner -->
+
+<!--fname chart--> 
+      
+<!-- partner chart -->
+<!--  <div class="col-md-4">-->
+<!--    <div class="chart-wrapper">-->
+<!--      <div class="chart-title">Partner</div>-->
+<!--        <div class="chart-stage" data-step="11" data-intro="It seems like you're more likely to die if you're single in Summer Bay! Couple up quickly!" style="font-weight: normal" data-position="right">-->
+<!--          <div id="partner-chart"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!-- partner -->
 
   			
-			
-			<!--test-->
-			<div class="row test">
-			  <div class="col-md-8">
-			    main box
-			  </div>
-			  
-			  
-			  
-			  <div class="col-md-4">
-			    <div class="row">
-			      <div class="col-md-12">
-			        box b
-			      </div>
-			     </div>
-			     
-			   <div class="row">
-			     <div class="col-md-12">box c</div>
-			   </div>
-			   
-			  </div>
-			</div>
-			
-			
-
+<!--family chart--> 
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="chart-wrapper">
+          <div class="chart-title">Family related to or affiliated with</div>
+            <div class="chart-stage" data-step="8" data-intro="The Stewarts have really suffered over the years, cwith deaths and heart attacks always looming over them" style="font-weight: normal" data-position="right">
+              <div id="family-chart"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+<!--family chart-->
+  
+  <!--outro-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="chart-wrapper">
+          <div class="chart-title">Family related to or affiliated with</div>
+            <div class="chart-stage" data-step="8" data-intro="The Stewarts have really suffered over the years, cwith deaths and heart attacks always looming over them" style="font-weight: normal" data-position="right">
+            <div id="family-chart"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 </div>
-
-  <hr>
+			
+			
 
   <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
   <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>

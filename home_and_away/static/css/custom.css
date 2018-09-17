@@ -78,6 +78,13 @@ g {
     cursor: pointer;
     fill: white;
     text-shadow: 1px 1px #000000;
+    padding: 0px;
+    x: 5;
+    
+}
+
+.dc-chart g.row rect {
+    padding: 0px;
 }
 
 .pie-slice title {
@@ -152,6 +159,16 @@ g {
     cursor: pointer;
 }
 
+#family-chart svg {
+    margin: 0;
+    padding: 0px;
+}
+
+#family-chart g {
+    padding-left: 0px;
+}
+
+
 .dc-legend {
     font-size: 15px;
     padding-right: 30px;
@@ -161,5 +178,22 @@ g {
     
     .container-fluid {
         display: inline;
+        }
+    /*row {*/
+    /*    margin-left: 0px;*/
+    /*    margin-right: 0px;*/
+    /*}*/
+    svg {
+        overflow: visible;
+    }
+    
+    g {
+        max-width: 100%;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+
+
 }
