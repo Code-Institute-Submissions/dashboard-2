@@ -49,8 +49,13 @@ g {
     padding-left: 20px;
 }
 
+p {
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+}
+
 .navbar-header {
-    font-family: "Reporter-Two", Arial, sans-serif;
+    font-family: 'reporter-tworegular', Arial, sans-serif;
 }
 .navbar-inverse {
   background-color: #ffffff;
