@@ -74,11 +74,11 @@ The sites I used were:
 
 - I created the HA favicon in Photoshop
 
-## Colour scheme/
+## Colour scheme
 
 - I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
--[Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
--[Home and Away font](https://www.wfonts.com/font/reporter-two)
+- [Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
+- [Home and Away font](https://www.wfonts.com/font/reporter-two)
 
 ## Code Snippets
 
