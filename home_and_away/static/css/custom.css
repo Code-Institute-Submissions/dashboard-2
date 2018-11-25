@@ -17,6 +17,7 @@ body {
 div .dc-chart {
     margin: auto;
     float: none;
+    overflow: auto;
 }
 
 .chart-wrapper .chart-stage {
@@ -160,11 +161,7 @@ a.links {
 .container-fluid {
     display: inline;
         }
-svg {
-    overflow: auto;
-}
-
-svg:not(:root) {
+div .dc-chart {
     overflow: auto;
 }
     
@@ -193,6 +190,8 @@ body.application {
 
 @media (min-width: 768px) and (max-width: 991px) {
   
-
+div .dc-chart {
+    overflow: auto;
+}
 
 }

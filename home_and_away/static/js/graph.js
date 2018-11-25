@@ -127,6 +127,7 @@ function makeGraphs(error, testhaadb) {
         // .innerRadius(10)
         .transitionDuration(1500)
         .dimension(causeOfDeathDim)
+        .responsive(true)
         .group(numDeathsByCause)
         .legend(dc.legend());
     
