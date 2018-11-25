@@ -56,18 +56,24 @@ I tested the site on a number of browsers and devices to ensure it worked on all
 
 ## Deployment
 
-I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud 9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud 9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time.  
+I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I took my time and read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time.  
 
 ## Credits
 
 ## Content
 - All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
 
+The sites I used were:
+-[Back to the Bay](https://www.backtothebay.net)
+-[Home and Away Wiki](https://homeandaway.fandom.com/wiki/Home_and_Away_Wiki) 
+-[Your Gym Wiki](http://yourgymwiki.blogspot.com/2017/12/summer-bay_16.html)
+-[Wikipedia](https://en.wikipedia.org/wiki/List_of_births,_marriages_and_deaths_in_Home_and_Away)
+
 ## Imagery
 
 - I created the HA favicon in Photoshop
 
-## Colour scheme
+## Colour scheme/
 
 - I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
 -[Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
