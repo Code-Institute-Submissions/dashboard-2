@@ -1,64 +1,54 @@
 # Stream Two Project - Death & Destruction in Home & Away Data Dashboard
 
-For my data dashboard, I wanted to show th
+For my data dashboard, I wanted to show the ridiculous and hilarious ways in which characters have died in Home and Away over the last 20 years. 
 
 ## UX
 
-For this site, I wanted the layout to be very clean and simple so I went for a simple colour scheme and a minimal layout. When I visit a restaurant or shop website, I am often frustrated trying to find where their open hours might be located or where I'd find their menu so I wanted the site to be straightforward and simple to follow. 
+I wanted to keep the layout for the dashboard quite simple but I also wanted to show how ridiculous Home and Away can be sometimes and really show the ways in which people have died, the fact that some people are always getting injured or having heart attacks and I wanted it to be a comical dashboard for users to enjoy. Therefore, some of the graphs are quite large and do contain a lot of information. I thought about scaling this back but it wouldn't have really conveyed what I wanted to show and I wanted to highlight stuff like the amount of people who get shot or die in car crashes which wouldn't be the same if I scaled back the data. 
 
-When a user visits the site for the first time, they are met with 3 simple images that already convey an idea of the type of food they can find at this restaurant, ie seafood. Below this, theres also a quick blurb about the restaurant to give the user a further idea of what its about.
+I tried to incorporate some sort of beachy themed colour scheme but it ended up being too overbearing so I decided to just create rainbow coloured graphs, using the hex codes of Crayola crayons. I also made sure to include the Home and Away font so it felt more authentic. 
 
-The navbar then allows the user to follow a simple path to get what they need, be it menus, contact details, location etc. 
+I drew some rough drawings on pen and paper to show how I wanted the dashboard to look. These can be found in the mockups section. 
 
-I drew up some brief ideas with pen and paper of how I wanted the site to look and then I created simple wireframes in Photoshop which can be found in the mockup folder on Github. 
+Because of the sheer scale of some graphs, I removed the labels from some as they were overlapping too much and instead used legends to allow users interact with the graphs. 
+
+I wanted users to enter the site and in the first graph to get a good idea of how many people have actually died in the last 23 years, and of course who faked their own death! The graphs move along to then show how people died, what the big storyline was and then further down, to show who these people were, where they lived and who they left behind. My main emphasis though was to show the ways in which people died so these graphs were kept to the start of the site. 
+
 
 ## Features
 
-Existing Features:
-
-- Homepage:
-
-The homepage is kept simple and clean, and just displays 3 simple images to convey the type of food found in sea&stone.
-
-- About:
-
-The about page gives some basic info on sea&stone, like opening hours and what type of food is served. 
-
-- News:
-
-The news page is like a blog page that can be updated easily, detailing news and upcoming events at sea&stone. It also includes some videos to give customers an idea of what the events are like, ie the barista master class and gives updates and info on upcoming events and event bookings. 
-
-- Menus:
-
-The menu page was initially created as a simple js carousel of all the menus available but this wasn't very eye catching so I amended it to have separate PDF menus for each meal type. These download to your device or open in new tabs. I also included a js carousel of eye catching food images to give users an idea of what type of food sea&stone provides.   
-
-- Location: 
-
-The location page includes an embedded Google map which can easily be used for directions to sea&stone as well as the address and info on parking nearby.
-
-- Contact:
-
-The contact page gives visitors the opportunity to fill in a form if they want to book an event like a Christmas party or family gathering. When the form is submitted, the user is shown a pop up to say 'thanks, we'll be in touch soon' to show that the form has been succesfully submitted. It also gives visitors all contact details like phone number and email address as well as links to the Facebook, Instagram and Twitter accounts for sea&stone. 
+The site is simply laid out with a tour button to guide people through it in a comical way. I used a bright colour scheme with numerous colours to make the legend easier to navigate if labels weren't present. 
 
 Features left to implement:
 
-- Footer:
+- Responsive:
 
-I think the site needs a proper footer at the bottom with links. 
+If I had more time, I would like to make the site more responsive
 
-- Something more:
+- Sizing issues
 
-I'm not sure what else restaurant websites really need but I'd like mine to be a bit more exciting and not quite so simple. It would be nice to have an external table booking system integrated like Open Table.
+I think some of the graphs could be resized slightly to allow the labels to display a bit better and so that the legend isnt right on top of them/beside them.
 
 ## Technologies Used
 
-- HTML - to build the site
+- HTML - for the basic site layout
 - CSS - to style the site
+- [MongoDb](https://www.mongodb.com/) - I collected all the data I wanted from various sites and then created a database in MongoDb
+- [Python](https://www.python.org/) - for the backend of the dashboard
+- [Flask](https://www.fullstackpython.com/flask.html) - for the backend
 - [Bootstrap](https://getbootstrap.com/) - to style the site and make it more responsive
-- Javascript - for an image carousel and to allow popups for form submission
-- [Google Fonts](https://fonts.google.com/) - for easily integrated fonts
-- [Font Awesome](https://fontawesome.com/) - for easily integrated social media icons
-- github - to store and host the website
+- [D3](https://d3js.org/) - to create charts
+- [DC](http://dc-js.github.io/dc.js/) - to make an interactive dashboard
+- [Intro.js](https://introjs.com/) - to allow for a tour of the site
+- [Crossfilter](https://github.com/square/crossfilter) - to allow data interaction
+- [Javascript](https://www.javascript.com/) - to create graphs
+- [Gunicorn](https://gunicorn.org/) - to help run the app
+- [Pymongo](https://api.mongodb.com/python/current/) - to work with MongoDb
+- [mLab](https://mlab.com/) - to host the database
+- [Heroku](http://www.heroku.com) - to host the website
+- [Google Fonts](https://fonts.google.com/) - for easy font integration
+- [Pycharm](https://www.jetbrains.com/pycharm/) - started the dashboard here before moving it to Cloud9
+- [Mongo Management Studio](http://mms.litixsoft.de/) - to update/maintain the database
 
 ## Testing
 
@@ -143,3 +133,4 @@ The site was regularly updated by pushing to Github which I then used to host th
 
 
 
+http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts

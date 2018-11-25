@@ -160,8 +160,13 @@ a.links {
     
 .container-fluid {
     display: inline;
-        }
-div .dc-chart {
+}
+
+svg {
+    overflow: auto;
+}
+
+svg:not(:root) {
     overflow: auto;
 }
     
@@ -176,6 +181,7 @@ g {
 
 .intro_button {
     margin-left:25px;
+    margin-top: 30px;
 }
 
 .navbar-fixed-top{
@@ -186,6 +192,8 @@ body.application {
     padding: 20px 20px 0;
 }
 
+div .dc-chart {
+    overflow: auto;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -193,5 +201,4 @@ body.application {
 div .dc-chart {
     overflow: auto;
 }
-
 }
