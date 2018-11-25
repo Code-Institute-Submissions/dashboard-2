@@ -52,85 +52,28 @@ I think some of the graphs could be resized slightly to allow the labels to disp
 
 ## Testing
 
-The site was tested numerous times by myself and friends on different browsers and devices to ensure it was fully responsive. 
-
-## Homepage testing:
-
-1. Check that all the navigation links are working and that each page has its own title
-2. Check that the link 'click here to book' is working
-3. Result - all links working correctly, each page has its own title
-
-## About page testing:
-1. Check that all information is accurate and correct
-2. Check that all links work from the about page
-3. Result - all info is correct and all links work correctly
-
-## News page testing:
-1. Check that all info is correct and all news links are working
-2. Check that both videos are loading and playing correctly. User should be able to play, pause, turn on/off sound and make the video fullscreen. 
-3. Check that videos work responsively and on different browsers
-4. Result - all links working and both videos loading and playing correctly. All controls working fully. 
-
-## Menus page testing:
-1. Check that the image carousel is working correctly on all browsers and on mobile devices
-2. Check that each menu is opening/downloading correctly and is the correct menu as labelled
-3. Result - all menus opening/downloading correctly, image carousel working correctly
-
-## Location page testing:
-1. Ensure map is fully functional and allows users to zoom in and out and open the map in Google maps by clicking 'view larger map'
-2. Result - Map is functioning correctly on all devices and can be opened fully in Google maps
-
-## Contact page testing:
-
-## Test 1. 
-- Ensure form functions as intended
-- User clicks submit with empty form - should not work
-- Result - pop up says 'Please fill out this field' - test passed
-
-## Test 2.
-- User fills in only one field - should not work 
-- Result - pop up says 'Please fill out this field' - test passed
-
-## Test 3. 
-- User fills out only a few fields - should not work
-- Result - pop up says 'Please fill out this field' - test passed
-
-## Test 4. 
-- User fills out incorrect email format - should not work
-- Result - Popup saying 'please include @ in email format' - test passed
-
-## Test 5. 
-- User fills out number field incorrectly - should not work
-- Result - popup says must match number format/10 digit number - test passed
-
-## Test 6. 
-- User fills out form correctly with all required fields filled correctly and hits submit - should work
-- Result - Form is submitted, user gets a pop up alert to tell them that 'we'll be in touch soon' - Test passed
-
-## General testing for responsiveness
-
-The site was tested on phones, tablets, laptops and desktop pcs to ensure it was as responsive as possible and adjustments were then made to make sure it both looked and functioned well. Using Chromes developer tools, I was also able to check that it worked for screen dimensions of many sizes. I wanted the photos and items to stack when the site was viewed on a phone or smaller device but still look good with everything fitting correctly and not overflowing or being oversized. 
+I tested the site on a number of browsers and devices to ensure it worked on all. I attempted numerous times to make the site more responsive on mobile devices but eventually realised it would take more time than I had. I added an 'overflow: auto' to the charts to allow them to overflow on mobile devices but if I had more time, I would have tried to make the graphs more responsive. However, given the scale of them, I'm not sure they would have ever worked very well on mobile devices as there were too many sections and labels. 
 
 ## Deployment
 
-The site was regularly updated by pushing to Github which I then used to host the site. 
+I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud 9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud 9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time.  
 
 ## Credits
 
 ## Content
-- All content about this fictional restaurant was created by me. I edited the videos and added music. The menus were made simply in Microsoft Word keeping a consistent colour scheme and font detail.
+- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
 
-## Imagery & Videos
+## Imagery
 
-- All imagery and videos on the website are free for reuse. All imagery and videos were found at Unsplash.com or Pexels.com. 
-- The favicon image was found online [here](http://www.iconarchive.com/show/ios7-icons-by-icons8/Animals-Crab-icon.html)
+- I created the HA favicon in Photoshop
+
+## Colour scheme
+
+- I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
+-[Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
+-[Home and Away font](https://www.wfonts.com/font/reporter-two)
 
 ## Code Snippets
 
-- The code for the image carousel came from [W3Schools](https://www.w3schools.com/w3css/w3css_slideshow.asp)
-- The code for the form submit popup was found on Stack overflow, not sure of link but something similar to [this](https://stackoverflow.com/questions/5443568/javascript-windows-alert-with-redirect-function)
-- All other code was written by me or adapted from the LMS lessons
-
-
-
-http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts
+- All code was written by me and/or adapted from the LMS lessons.
+- I also received great help on the Tutoring page from Nakita, Haley & Niel
