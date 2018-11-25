@@ -140,13 +140,8 @@ p {
 a.links {
     text-align: center;
     color: black;
-    text-decoration: none;
     font-family: 'Questrial', sans-serif;
     margin-left: 20px;
-}
-
-a.links:hover a.links:focus{
-    font-weight: bold;
 }
 
 .datalinks {
