@@ -61,9 +61,8 @@ I initially started the Dashboard on Pycharm and after a lot of work, got it wor
 ## Credits
 
 ## Content
-- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
+- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. The sites I used were:
 
-The sites I used were:
 -[Back to the Bay](https://www.backtothebay.net)
 -[Home and Away Wiki](https://homeandaway.fandom.com/wiki/Home_and_Away_Wiki) 
 -[Your Gym Wiki](http://yourgymwiki.blogspot.com/2017/12/summer-bay_16.html)
