@@ -149,6 +149,10 @@ a.links:hover a.links:focus{
     text-decoration: none;
 }
 
+.datalinks {
+    text-align:center;
+}
+
 .intro_button {
     margin-top:10px;
     height: 30px;
