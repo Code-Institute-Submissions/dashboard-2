@@ -60,7 +60,7 @@ I initially started the Dashboard on Pycharm and after a lot of work, got it wor
 
 ## Credits
 
-## Content
+### Content
 - All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
 
 The sites I used were:
@@ -70,17 +70,17 @@ The sites I used were:
 - [Your Gym Wiki](http://yourgymwiki.blogspot.com/2017/12/summer-bay_16.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/List_of_births,_marriages_and_deaths_in_Home_and_Away)
 
-## Imagery
+### Imagery
 
 - I created the HA favicon in Photoshop
 
-## Colour scheme
+### Colour scheme
 
 - I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
 - [Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
 - [Home and Away font](https://www.wfonts.com/font/reporter-two)
 
-## Code Snippets
+### Code Snippets
 
 - All code was written by me and/or adapted from the LMS lessons.
 - I also received great help on the Tutoring page from Nakita, Haley & Niel
