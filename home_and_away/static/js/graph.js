@@ -1,3 +1,5 @@
+// all code written by me and/or adapted from lessons
+
 queue()
     .defer(d3.json, "/test/haadb")
     .await(makeGraphs);
@@ -202,12 +204,12 @@ function makeGraphs(error, testhaadb) {
         .brushOn(false)
         // .renderArea(true)
         .x(d3.time.scale().domain([minDate, maxDate]))
-        // makes bars thicker, solution found on StackOverflow mentioned in README
+        // solution found on Stack Overflow to make bars wider
         .xUnits(function () {
             return 25;
         })
         .transitionDuration(500)
-        //makes the bar chart clickable, solution found on StackOverflow and mentioned in README
+        //solution found on Stack Overflow making bars selectable
         .on("renderlet", function (yearChart) {
         yearChart.selectAll("rect.bar").on("click", yearChart.onClick);
         })
@@ -220,16 +222,6 @@ function makeGraphs(error, testhaadb) {
         .ticks(8);
     
     
-   
-    
-    
-    
-    
-    
-    
-    
-    
-        
     
     fnameChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
@@ -241,21 +233,6 @@ function makeGraphs(error, testhaadb) {
         .legend(dc.legend());
         
     
-    
-    
-    
-    
-
-
-
-
-
-
-
-   
-
-
-
 
     familyChart
         .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
@@ -267,27 +244,6 @@ function makeGraphs(error, testhaadb) {
         .elasticX(true)
         .gap(3)
         .xAxis().ticks(3);
-
-
-
-
-
-
-
-    // partnerChart
-    //     .ordinalColors(["#ff5359", "#ff6e4a", "#ff7538", "#ffa343", "#ffcf48", "#fdfc74", "#b2ec5d", "#1df914", "#1cac78", "#1cd3a2", "#1fcecb", "#1dacd6", "#1f75fe", "#5d76cb", "#7442c8", "#8f509d", "#fb7efd", "#ff1dce", "#c0448f", "#ff43a4", "#f75394", "#e3256b", "#de5d83", "#c8385a", "#fc2847", "#ff9baa", "#cb4154"])
-    //     .height(700)
-    //     .width(400)
-    //     .transitionDuration(1500)
-    //     //solution found online at dc-js.github.io//
-    //     .dimension(partnerDim)
-    //     .group(numDeathsByPartner)
-    //     .legend(dc.legend());
-
-
-
-    
-
 
 
     dc.renderAll();

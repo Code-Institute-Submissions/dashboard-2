@@ -83,4 +83,5 @@ The sites I used were:
 ### Code Snippets
 
 - All code was written by me and/or adapted from the LMS lessons.
+- Some snippets were found on stack overflow and are mentioned in the code but I have lost the links. 
 - I also received great help on the Tutoring page from Nakita, Haley & Niel as well as from my mentor Victor.
