@@ -23,7 +23,7 @@ Features left to implement:
 
 - Responsive:
 
-If I had more time, I would like to make the site more responsive
+If I had more time, I would like to make the site more responsive. I added an overflow value to the graphs but I don't think its enough. I know these graphs are usually not very responsive anyway but it would have been nice to make them more user friendly on mobile devices. 
 
 - Sizing issues
 
