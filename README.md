@@ -19,7 +19,7 @@ I wanted users to enter the site and in the first graph to get a good idea of ho
 
 The site is simply laid out with a tour button to guide people through it in a comical way. I used a bright colour scheme with numerous colours to make the legend easier to navigate if labels weren't present. 
 
-Features left to implement:
+### Features left to implement:
 
 - Responsive:
 
