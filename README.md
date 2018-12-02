@@ -61,7 +61,7 @@ I initially started the Dashboard on Pycharm and after a lot of work, got it wor
 ## Credits
 
 ### Content
-- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
+- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in [Excel](https://github.com/oheag2/dashboard/blob/master/mockups/closer%20each%20day%20-%20Sheet1.pdf) as the framework for how I would create the database in MongoDB. 
 
 The sites I used were:
 
