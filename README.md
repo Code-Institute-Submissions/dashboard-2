@@ -8,7 +8,7 @@ I wanted to keep the layout for the dashboard quite simple but I also wanted to 
 
 I tried to incorporate some sort of beachy themed colour scheme but it ended up being too overbearing so I decided to just create rainbow coloured graphs, using the hex codes of Crayola crayons. I also made sure to include the Home and Away font so it felt more authentic. 
 
-I drew some rough drawings on pen and paper to show how I wanted the dashboard to look. These can be found in the mockups section, as well as examples of how the tour works and looks and an example of how the graphs interact when you select something, ie 'shot' as the type of death.
+I drew some rough drawings on pen and paper to show how I wanted the dashboard to look. These can be found in the [mockups](https://github.com/oheag2/dashboard/tree/master/mockups) section, as well as examples of how the tour works and looks and an example of how the graphs interact when you select something, ie 'shot' as the type of death.
 
 Because of the sheer scale of some graphs, I removed the labels from some as they were overlapping too much and instead used legends to allow users interact with the graphs. 
 
